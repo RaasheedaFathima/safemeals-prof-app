@@ -10,10 +10,17 @@ import "firebase/analytics";
 import "firebase/auth";
 import "firebase/firestore";
 
+
 // TODO: Replace the following with your app's Firebase project configuration
 // For Firebase JavaScript SDK v7.20.0 and later, `measurementId` is an optional field
 const firebaseConfig = {
-    // ...
+        apiKey: process.env.API_KEY,
+        authDomain: process.env.AUTHDOMAIN,
+        projectId: process.env.PROJECTID,
+        storageBucket: process.env.STORAGEBUCKET,
+        messagingSenderId: process.env.MESSAGING_SENDER_ID,
+        appId: process.env.APP_ID,
+        measurementId: process.env.MEASUREMENT_ID
   };
   
   // Initialize Firebase
