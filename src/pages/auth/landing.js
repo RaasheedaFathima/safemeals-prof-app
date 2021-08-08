@@ -4,8 +4,10 @@ import ReactDOM from 'react-dom';
 import { createTheme, withStyles, makeStyles, ThemeProvider } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { teal } from '@material-ui/core/colors';
-import { Link } from '@material-ui/core';
+import { Grid, Link } from '@material-ui/core';
 import { createMuiTheme } from '@material-ui/core/styles';
+
+import '../../App.css';
 
 //import all styles here
 const ColorButton = withStyles((theme) => ({
@@ -45,6 +47,7 @@ const ColorButton = withStyles((theme) => ({
   //function here 
   function Landing(){
     return(
+    <Grid justifyContent="center">
     <div>
     <h1> Order with Confidence </h1>
     <h2>Millions of people us SafeMeals to decode their personal food, allergies and diet preferences.</h2>
@@ -61,6 +64,7 @@ const ColorButton = withStyles((theme) => ({
       </Button>
   </h3>
   </div>
+  </Grid>
     );
   }
 
