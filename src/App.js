@@ -6,7 +6,7 @@ import React from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 
 //import {Login} from './pages/auth/login';
-import Register from './pages/auth/register';
+import Register from './pages/auth/Register';
 import Landing from './pages/auth/landing';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       <Route exact path='/' component= {Landing}/>
-       <Route exact path='/register' component={Register}/>
+      <Route exact path="/register" component={Register}/>
        </Router>
   );
 }
